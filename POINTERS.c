@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int age = 30;
+    int *pAge = &age;
+    double gpa = 3.5;
+    double *pGpa = &gpa;
+
+    printf("%d\n", *&pAge); /*we get a hexA DECIMAL MEMORY ADRESS IN RAM*/
+    printf("%f", *&pGpa);
+    return 0;
+}
